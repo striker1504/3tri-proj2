@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra seus talentos, explore possibilidades profissionais e construa seu plano de carreira.">
+  <title>CareerMentor | Seu futuro profissional</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">Career<span>Mentor</span></a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#mentor">Meu mentor</a>
+      <a href="#plano">Plano de carreira</a>
+    </nav>
+
+    <a href="#mentor" class="nav-button">Começar agora ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">✦ SUA JORNADA COMEÇA AQUI</span>
+        <h1>Seu talento.<br>Sua carreira.<br><span>Seu futuro.</span></h1>
+        <p>
+          Descubra seu potencial, encontre o caminho profissional ideal
+          e transforme seus objetivos em conquistas reais.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#mentor" class="button button-primary">
+            Construir minha carreira ↗
+          </a>
+          <a href="#como-funciona" class="button button-secondary">
+            Como funciona
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          Um passo de cada vez. Um futuro de possibilidades.
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="visual-top">
+            <div>
+              <span class="muted">SEU PRÓXIMO CAPÍTULO</span>
+              <h3>Potencial em construção</h3>
+            </div>
+            <span class="sparkle">✳</span>
+          </div>
+
+          <div class="growth-illustration">
+            <div class="growth-circle circle-one"></div>
+            <div class="growth-circle circle-two"></div>
+            <div class="growth-circle circle-three"></div>
+            <div class="growth-symbol">↗</div>
+            <span class="floating-tag tag-one">Habilidades</span>
+            <span class="floating-tag tag-two">Propósito</span>
+            <span class="floating-tag tag-three">Evolução</span>
+          </div>
+
+          <div class="visual-bottom">
+            <div>
+              <strong>Clareza</strong>
+              <span>Descubra sua direção</span>
+            </div>
+            <div>
+              <strong>Progresso</strong>
+              <span>Construa seu caminho</span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-note">✦ Seu futuro começa com uma escolha.</div>
+      </div>
+    </section>
+
+    <section class="features section" id="como-funciona">
+      <div class="section-heading">
+        <span class="eyebrow">SUA EVOLUÇÃO PROFISSIONAL</span>
+        <h2>Carreira não é sorte.<br><span>É construção.</span></h2>
+        <p>As ferramentas certas ajudam você a transformar dúvidas em decisões.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">◎</div>
+          <h3>Autoconhecimento</h3>
+          <p>Entenda seus interesses, habilidades e pontos que pode desenvolver.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Direção profissional</h3>
+          <p>Explore áreas e descubra caminhos alinhados com seus objetivos.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">↗</div>
+          <h3>Plano de ação</h3>
+          <p>Transforme suas metas em etapas práticas e acompanhe seu progresso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mentor-section section" id="mentor">
+      <div class="mentor-intro">
+        <span class="eyebrow">SEU MENTOR PESSOAL</span>
+        <h2>Vamos desenhar<br>seu próximo passo?</h2>
+        <p>Conte um pouco sobre você para receber sugestões iniciais de carreira e desenvolvimento.</p>
+
+        <div class="mentor-tip">
+          <span>✦</span>
+          <p>Não precisa ter tudo decidido. O primeiro passo é entender onde você está e aonde quer chegar.</p>
+        </div>
+      </div>
+
+      <form id="career-form" class="career-form">
+        <div class="form-header">
+          <span class="step-label">01 — SEU PERFIL</span>
+          <span class="form-time">2 minutos</span>
+        </div>
+
+        <label for="name">Como podemos chamar você?</label>
+        <input id="name" name="name" type="text"
+          placeholder="Seu nome" required maxlength="60">
+
+        <label for="interest">Qual área mais desperta seu interesse?</label>
+        <select id="interest" name="interest" required>
+          <option value="">Selecione uma área</option>
+          <option value="tecnologia">Tecnologia e programação</option>
+          <option value="design">Design e criatividade</option>
+          <option value="negocios">Negócios e empreendedorismo</option>
+          <option value="saude">Saúde e bem-estar</option>
+          <option value="educacao">Educação e desenvolvimento humano</option>
+          <option value="marketing">Marketing e comunicação</option>
+          <option value="engenharia">Engenharia e inovação</option>
+          <option value="indefinido">Ainda não sei</option>
+        </select>
+
+        <label for="experience">Qual é seu momento profissional?</label>
+        <select id="experience" name="experience" required>
+          <option value="">Selecione seu momento</option>
+          <option value="inicio">Estou começando minha carreira</option>
+          <option value="estudante">Sou estudante</option>
+          <option value="transicao">Quero mudar de carreira</option>
+          <option value="crescimento">Quero crescer na minha área</option>
+          <option value="empreender">Quero empreender</option>
+        </select>
+
+        <label for="goal">Qual é seu principal objetivo?</label>
+        <textarea id="goal" name="goal" rows="3" maxlength="500"
+          placeholder="Ex.: conseguir meu primeiro emprego, aprender programação, conquistar uma promoção..."></textarea>
+
+        <button type="submit" class="button button-primary submit-button">
+          Criar meu plano de carreira ↗
+        </button>
+        <p class="privacy-note">Suas respostas serão utilizadas nesta página para gerar suas sugestões.</p>
+      </form>
+    </section>
+
+    <section class="results-section section" id="resultados" hidden>
+      <div class="section-heading">
+        <span class="eyebrow">SEU PONTO DE PARTIDA</span>
+        <h2 id="result-title">Seu caminho profissional</h2>
+        <p id="result-description"></p>
+      </div>
+
+      <div class="result-grid">
+        <article class="result-card">
+          <span class="result-icon">◎</span>
+          <h3>Área para explorar</h3>
+          <p id="result-area"></p>
+        </article>
+        <article class="result-card">
+          <span class="result-icon">✦</span>
+          <h3>Foco de desenvolvimento</h3>
+          <p id="result-skill"></p>
+        </article>
+        <article class="result-card">
+          <span class="result-icon">↗</span>
+          <h3>Seu primeiro passo</h3>
+          <p id="result-first-step"></p>
+        </article>
+      </div>
+
+      <div class="action-plan" id="plano">
+        <div>
+          <span class="eyebrow">SEU PLANO DE AÇÃO</span>
+          <h3>Comece a construir seu futuro</h3>
+          <p>Marque cada etapa conforme você avança.</p>
+        </div>
+
+        <div id="plan-progress" class="progress-track">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="progress-label" class="progress-label">0 de 4 etapas concluídas</p>
+        <div id="plan-steps" class="plan-steps"></div>
+
+        <button type="button" id="restart-button" class="button button-secondary">
+          Criar novo plano
+        </button>
+      </div>
+
+      <p class="disclaimer">
+        Estas sugestões são orientações iniciais, não uma avaliação profissional
+        definitiva. Adapte as etapas à sua realidade e aos seus objetivos.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo">Career<span>Mentor</span></a>
+    <p>Construa hoje a carreira que deseja viver amanhã.</p>
+    <span>© 2026 CareerMentor · Projeto demonstrativo</span>
+  </footer>
+</body>
+</html>
